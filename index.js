@@ -11,7 +11,7 @@ const cors = require('cors');
 // }
 
 const app = express();
-// app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 const Connection = require('./connection/connection');
